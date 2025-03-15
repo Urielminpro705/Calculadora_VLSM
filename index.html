@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es-Mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/index.css">
+    <title>Subneteo | UWU</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form id="form-subneteo">
+                <fieldset>
+                    <Legend>Subneteo VLSM</Legend>
+                    <Label>Ingresa el numero de redes</Label>
+                    <input type="number" id="numero-de-redes" name="numero-de-redes" placeholder="Numero de redes" min="1" required>
+                </fieldset>
+                <fieldset>
+                    <Legend>Cantidad de hosts en las redes</Legend>
+                    <div id="cont-inputs-redes"></div>
+                    <button type="submit" id="btn-calcular">
+                        Calcular
+                    </button>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <table>
+                <colgroup>
+                    <col class="col-tabla">
+                    <col class="col-tabla">
+                    <col class="col-tabla">
+                    <col class="col-tabla">
+                    <col class="col-tabla">
+                  </colgroup>
+                <thead>
+                    <tr>
+                        <th>Red</th>
+                        <th>broadcast</th>
+                        <th>Mascara</th>
+                        <th>Mascara bits</th>
+                        <th>Hosts totales</th>
+                        <th>Hosts disponibles</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-subneteo">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script type="module" src="static/js/index.js"></script>
+</body>
+</html>
