@@ -34,7 +34,7 @@ function mostrarInformacion(resultados) {
         fila.innerHTML = `
             <td>${rango.red.join(".")}</td>
             <td>${rango.broadcast.join(".")}</td>
-            <td>${subneteador.calcularMascara(rango.mascara)}</td>
+            <td>${subneteador.calcularMascara(rango.mascara).join(".")}</td>
             <td>${rango.mascara}</td>
             <td>${rango.hosts_totales}</td>
             <td>${rango.hosts_disponibles}</td>
